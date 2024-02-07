@@ -20,7 +20,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/xanzy/go-gitlab"
 
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients"
 )
 
 const (

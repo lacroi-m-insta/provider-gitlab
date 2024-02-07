@@ -24,7 +24,7 @@ import (
 	"github.com/xanzy/go-gitlab"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
 )
 
 func TestGenerateCreateProjectDeployTokenOptions(t *testing.T) {

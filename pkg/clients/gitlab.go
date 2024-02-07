@@ -35,8 +35,8 @@ import (
 	xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
 	"github.com/crossplane/crossplane-runtime/pkg/resource"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/apis/v1beta1"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/v1beta1"
 )
 
 // Config provides gitlab configurations for the Gitlab client
@@ -44,11 +44,15 @@ type Config struct {
 	Token              string
 	BaseURL            string
 	InsecureSkipVerify bool
+	AuthMethod         v1beta1.AuthType
 }
 
 // NewClient creates new Gitlab Client with provided Gitlab Configurations/Credentials.
 func NewClient(c Config) *gitlab.Client {
+	var cl *gitlab.Client
+	var err error
 	options := []gitlab.ClientOptionFunc{}
+
 	if c.BaseURL != "" {
 		options = append(options, gitlab.WithBaseURL(c.BaseURL))
 	}
@@ -65,10 +69,24 @@ func NewClient(c Config) *gitlab.Client {
 		}
 		options = append(options, gitlab.WithHTTPClient(httpclient))
 	}
-	cl, err := gitlab.NewClient(c.Token, options...)
+
+	switch c.AuthMethod {
+	// TODO: implement BasicAuth structure with Username and Password
+	//	case v1beta1.BasicAuth:
+	// 		cl, err = gitlab.NewBasicAuthClient(c.Username, c.Password, gitlab.WithBaseURL(c.BaseURL))
+	case v1beta1.JobToken:
+		cl, err = gitlab.NewJobClient(c.Token, options...)
+	case v1beta1.OAuthToken:
+		cl, err = gitlab.NewOAuthClient(c.Token, options...)
+	case v1beta1.PrivateToken:
+		cl, err = gitlab.NewClient(c.Token, options...)
+	default:
+		cl, err = gitlab.NewClient(c.Token, options...)
+	}
 	if err != nil {
 		panic(err)
 	}
+
 	return cl
 }
 
@@ -109,6 +127,7 @@ func UseProviderConfig(ctx context.Context, c client.Client, mg resource.Managed
 			BaseURL:            pc.Spec.BaseURL,
 			Token:              string(s.Data[csr.Key]),
 			InsecureSkipVerify: ptr.Deref(pc.Spec.InsecureSkipVerify, false),
+			AuthMethod:         pc.Spec.Credentials.Method,
 		}, nil
 	default:
 		return nil, errors.Errorf("credentials source %s is not currently supported", s)

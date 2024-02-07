@@ -51,7 +51,7 @@ guidelines to get started.
 ## Report a Bug
 
 For filing bugs, suggesting improvements, or requesting new features, please
-open an [issue](https://github.com/crossplane-contrib/provider-gitlab/issues).
+open an [issue](https://github.com/lacroi-m-insta/provider-gitlab/issues).
 
 ## Contact
 

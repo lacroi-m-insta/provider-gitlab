@@ -21,10 +21,10 @@ import (
 
 	"github.com/crossplane/crossplane-runtime/pkg/controller"
 
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/groups/deploytokens"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/groups/groups"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/groups/members"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/groups/variables"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/groups/deploytokens"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/groups/groups"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/groups/members"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/groups/variables"
 )
 
 // Setup all group controllers

@@ -20,9 +20,9 @@ package apis
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 
-	groupsv1alpha1 "github.com/crossplane-contrib/provider-gitlab/apis/groups/v1alpha1"
-	projectsv1alpha1 "github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
-	gitlabv1beta1 "github.com/crossplane-contrib/provider-gitlab/apis/v1beta1"
+	groupsv1alpha1 "github.com/lacroi-m-insta/provider-gitlab/apis/groups/v1alpha1"
+	projectsv1alpha1 "github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
+	gitlabv1beta1 "github.com/lacroi-m-insta/provider-gitlab/apis/v1beta1"
 )
 
 func init() {

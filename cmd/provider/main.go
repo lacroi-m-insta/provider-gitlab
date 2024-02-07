@@ -37,10 +37,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis"
-	"github.com/crossplane-contrib/provider-gitlab/apis/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/features"
+	"github.com/lacroi-m-insta/provider-gitlab/apis"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/features"
 )
 
 func main() {

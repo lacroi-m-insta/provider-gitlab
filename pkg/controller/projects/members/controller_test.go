@@ -29,10 +29,10 @@ import (
 	"github.com/crossplane/crossplane-runtime/pkg/resource"
 	"github.com/crossplane/crossplane-runtime/pkg/test"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/projects"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/projects/fake"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/users"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/projects"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/projects/fake"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/users"
 )
 
 var (

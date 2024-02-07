@@ -21,9 +21,9 @@ import (
 
 	"github.com/crossplane/crossplane-runtime/pkg/controller"
 
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/config"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/groups"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/config"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/groups"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects"
 )
 
 // Setup creates all Gitlab API controllers with the supplied logger and adds

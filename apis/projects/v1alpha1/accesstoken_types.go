@@ -28,7 +28,7 @@ type AccessTokenParameters struct {
 	// ProjectID is the ID of the project to create the access token in.
 	// +optional
 	// +immutable
-	// +crossplane:generate:reference:type=github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1.Project
+	// +crossplane:generate:reference:type=github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1.Project
 	ProjectID *string `json:"projectId,omitempty"`
 
 	// ProjectIDRef is a reference to a project to retrieve its projectId

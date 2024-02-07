@@ -20,7 +20,7 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/groups/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/groups/v1alpha1"
 
 	"github.com/crossplane/crossplane-runtime/pkg/reference"
 	"github.com/pkg/errors"

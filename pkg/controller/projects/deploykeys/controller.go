@@ -21,11 +21,11 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
-	secretstoreapi "github.com/crossplane-contrib/provider-gitlab/apis/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/projects"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/features"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
+	secretstoreapi "github.com/lacroi-m-insta/provider-gitlab/apis/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/projects"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/features"
 )
 
 const (

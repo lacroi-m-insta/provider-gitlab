@@ -35,11 +35,11 @@ import (
 	"github.com/crossplane/crossplane-runtime/pkg/reconciler/managed"
 	"github.com/crossplane/crossplane-runtime/pkg/resource"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
-	secretstoreapi "github.com/crossplane-contrib/provider-gitlab/apis/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/projects"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/features"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
+	secretstoreapi "github.com/lacroi-m-insta/provider-gitlab/apis/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/projects"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/features"
 )
 
 const (

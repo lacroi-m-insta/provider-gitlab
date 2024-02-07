@@ -28,7 +28,7 @@ type DeployKeyParameters struct {
 	// The ID or URL-encoded path of the project owned by the authenticated user.
 	// +optional
 	// +immutable
-	// +crossplane:generate:reference:type=github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1.Project
+	// +crossplane:generate:reference:type=github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1.Project
 	// +crossplane:generate:reference:refFieldName=ProjectIDRef
 	// +crossplane:generate:reference:selectorFieldName=ProjectIDSelector
 	ProjectID *string `json:"projectId,omitempty"`

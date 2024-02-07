@@ -24,7 +24,7 @@ import (
 	"github.com/crossplane/crossplane-runtime/pkg/reconciler/providerconfig"
 	"github.com/crossplane/crossplane-runtime/pkg/resource"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/v1beta1"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/v1beta1"
 )
 
 // Setup adds a controller that reconciles ProviderConfigs by accounting for

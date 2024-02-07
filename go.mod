@@ -1,4 +1,4 @@
-module github.com/crossplane-contrib/provider-gitlab
+module github.com/lacroi-m-insta/provider-gitlab
 
 go 1.21
 

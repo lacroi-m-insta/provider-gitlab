@@ -37,9 +37,9 @@ import (
 	"github.com/xanzy/go-gitlab"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/groups/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/groups"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/groups/fake"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/groups/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/groups"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/groups/fake"
 )
 
 var (

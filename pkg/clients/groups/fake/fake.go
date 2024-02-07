@@ -19,7 +19,7 @@ package fake
 import (
 	"github.com/xanzy/go-gitlab"
 
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients/groups"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients/groups"
 )
 
 var _ groups.Client = &MockClient{}

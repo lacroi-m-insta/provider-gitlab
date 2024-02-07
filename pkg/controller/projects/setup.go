@@ -21,14 +21,14 @@ import (
 
 	"github.com/crossplane/crossplane-runtime/pkg/controller"
 
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/accesstokens"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/deploykeys"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/deploytokens"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/hooks"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/members"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/pipelineschedules"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/projects"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/controller/projects/variables"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/accesstokens"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/deploykeys"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/deploytokens"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/hooks"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/members"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/pipelineschedules"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/projects"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/controller/projects/variables"
 )
 
 // Setup all project controllers

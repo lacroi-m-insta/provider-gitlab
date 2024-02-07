@@ -21,8 +21,8 @@ import (
 
 	"github.com/xanzy/go-gitlab"
 
-	"github.com/crossplane-contrib/provider-gitlab/apis/projects/v1alpha1"
-	"github.com/crossplane-contrib/provider-gitlab/pkg/clients"
+	"github.com/lacroi-m-insta/provider-gitlab/apis/projects/v1alpha1"
+	"github.com/lacroi-m-insta/provider-gitlab/pkg/clients"
 )
 
 // AccessTokenClient defines Gitlab Project service operations
